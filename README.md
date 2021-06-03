@@ -5,8 +5,8 @@
 - **[Java练习生](https://cbqr.github.io)**
 
 ## 联系方式
-- **liusheng_work@163.com**
-- **754581698**
+- **email: liusheng_work@163.com**
+- **qq: 754581698**
 
 ## 概述
 
