@@ -1,2 +1,10 @@
 server:
   port: 9000
+
+spring:
+  application:
+    name: sznt-shop-user
+
+logging:
+  level:
+    com.sznt.shop.user.UserApplication: debug
