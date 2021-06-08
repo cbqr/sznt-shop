@@ -16,11 +16,11 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 @SpringBootApplication
 public class ProductApplication {
     public static void main(String[] args) {
-        log.info("===sznt-product 商品服务开始启动===");
+        log.info("=== [sznt-shop] 商品服务开始启动 ===");
         new SpringApplicationBuilder(ProductApplication.class)
                 .web(WebApplicationType.SERVLET)
                 .bannerMode(Banner.Mode.OFF)
                 .run(args);
-        log.info("===sznt-product 商品服务开始启动===");
+        log.info("=== [sznt-shop] 商品服务启动完成 ===");
     }
 }

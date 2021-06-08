@@ -24,13 +24,13 @@ import java.util.ArrayList;
 public class CodeGenerator {
 
     public static final String AUTHOR = "S Mr.L";
-    public static final String DB_URL = "jdbc:mysql://120.77.245.72:3306/shop_user?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8";
+    public static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/sznt_shop_user?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8";
     public static final String DB_USERNAME = "root";
     public static final String DB_PASSWORD = "123456";
     public static final String PACKAGE_PARENT = "com.sznt.shop";
     public static final String MODULE = "user";
-    public static final String[] INCLUDE = {"user", "undo_log"};
     public static final String DB_PREFIX = "";
+    public static final String[] INCLUDE = {"user", "address"};
 
     public static void main(String[] args) {
         System.out.println("=== 开始生成 " + MODULE + " 模块的代码 ===");
