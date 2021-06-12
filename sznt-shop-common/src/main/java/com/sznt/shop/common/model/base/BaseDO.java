@@ -1,4 +1,4 @@
-package com.sznt.shop.common.base;
+package com.sznt.shop.common.model.base;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;

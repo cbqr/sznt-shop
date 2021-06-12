@@ -1,0 +1,22 @@
+server:
+  port: 9000
+
+client:
+  oauth2:
+    client-id: appId
+    secret: 123456
+    grant_types:
+      - password
+      - refresh_token
+    token-validity-time: 2592000
+    refresh-token-validity-time: 2592000
+    scopes:
+      - api
+      - all
+
+logging:
+  level:
+    root: info
+    com.sznt.food.auth.AuthApplication: debug
+  pattern:
+    console: '%d{HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n'

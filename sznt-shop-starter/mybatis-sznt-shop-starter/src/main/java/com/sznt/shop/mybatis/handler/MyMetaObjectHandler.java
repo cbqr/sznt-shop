@@ -17,23 +17,30 @@ import java.util.Date;
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
 
+    private boolean hasSetter;
+
+    private static final Date N_DATE = new Date();
+
     @Override
     public void insertFill(MetaObject metaObject) {
         // 从元对象中获取 createTime 的 SetCreateTime() 方法
-        boolean hasSetter = metaObject.hasSetter("createTime");
+        hasSetter = metaObject.hasSetter("createTime");
         // 从对象中获取 createTime 字段值
         Object val = getFieldValByName("createTime", metaObject);
         if (hasSetter && val == null) {
-            this.strictInsertFill(metaObject, "createTime", Date.class, new Date());
+            log.info("come to insert fill...");
+            this.strictInsertFill(metaObject, "createTime", Date.class, N_DATE);
         }
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
-        boolean hasSetter = metaObject.hasSetter("updateTime");
+        hasSetter = metaObject.hasSetter("updateTime");
         Object val = getFieldValByName("updateTime", metaObject);
         if (hasSetter && val == null) {
-            this.strictUpdateFill(metaObject, "updateTime", Date.class, new Date());
+            log.info("come to update fill...");
+            this.strictUpdateFill(metaObject, "updateTime", Date.class, N_DATE);
         }
     }
+
 }

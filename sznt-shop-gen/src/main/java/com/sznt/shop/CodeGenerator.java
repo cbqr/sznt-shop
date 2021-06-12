@@ -113,7 +113,7 @@ public class CodeGenerator {
                 // url中驼峰转连字符
                 .setControllerMappingHyphenStyle(true)
                 // 设置BaseEntity
-                .setSuperEntityClass("com.sznt.shop.common.base.BaseDO")
+                .setSuperEntityClass("com.sznt.shop.common.model.base.BaseDO")
                 // 填写BaseEntity中的公共字段
                 .setSuperEntityColumns("id", "create_time", "update_time");
 

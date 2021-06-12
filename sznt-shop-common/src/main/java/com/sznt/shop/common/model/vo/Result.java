@@ -1,4 +1,4 @@
-//package com.sznt.shop.common.vo;
+package com.sznt.shop.common.model.vo;//package com.sznt.shop.common.vo;
 //
 //import io.swagger.annotations.ApiModel;
 //import io.swagger.annotations.ApiModelProperty;

@@ -23,6 +23,7 @@
         <module>sznt-shop-coupon</module>
         <module>sznt-shop-product</module>
         <module>sznt-shop-gen</module>
+        <module>sznt-shop-auth</module>
     </modules>
     <packaging>pom</packaging>
 
